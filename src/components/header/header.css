@@ -1,0 +1,58 @@
+.header {
+  height: 100px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: paytone one,sans-serif;
+  font-weight: 400;
+}
+
+.header li::first-letter {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-img, .book_room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.book_btn a {
+  text-decoration: none;
+  background: 0 0;
+  padding: 12px 26px;
+  font-size: 18px;
+  border: 1px solid #f2c64d;
+  color: #f2c64d;
+  border-radius: 30px;
+}
+
+.book_btn a:hover {
+  background: #f2c64d;
+  color: white;
+}
+
+.socail_links i {
+  color: white;
+}
+
+.socail_links i:hover {
+  color: #f2c64d;
+}
+/*# sourceMappingURL=header.css.map */
