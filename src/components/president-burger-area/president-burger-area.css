@@ -1,0 +1,70 @@
+.Burger_President_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Burger_President_area .single_Burger_President {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.Burger_President_area .single_Burger_President img {
+  width: 100%;
+}
+
+.Burger_President_area .single_Burger_President .room_heading {
+  position: absolute;
+  display: block;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 70px;
+  bottom: 60px;
+  font-family: "MontserratBold";
+}
+
+.Burger_President_area .single_Burger_President .room_heading span {
+  color: #f0542c;
+  font-size: 30px;
+  margin: 0 0 3px;
+}
+
+.Burger_President_area .single_Burger_President .room_heading h3 {
+  color: white;
+  font-size: 34px;
+  margin: 0 0 8px;
+}
+
+.Burger_President_area .single_Burger_President .room_heading p {
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  color: white;
+  margin: 9px 0 18px;
+  white-space: pre-wrap;
+  line-height: 2rem;
+}
+
+.Burger_President_area .single_Burger_President .room_heading a {
+  color: white;
+  background: #f2c64d;
+  padding: 9px 30px;
+  border: 1px solid #f2c64d;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.Burger_President_area .single_Burger_President .room_heading a:hover {
+  background-color: transparent;
+}
+/*# sourceMappingURL=president-burger-area.css.map */

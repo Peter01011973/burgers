@@ -1,34 +1,88 @@
 
 // colors
-
 $yellow: #f2c64d;
 
-.header {
+* {
+    box-sizing: border-box;
+}
+
+.header-container {
+    padding: 0 20px;
     height: 100px;
+    width: 100%;
+    position: fixed;
     background: black;
-    display: flex;
-    flex-direction: row;
-    font: {
-        family: paytone one,sans-serif;
-        weight: 400;
-    } 
-    li::first-letter {
-        text-transform: uppercase;
-        text-decoration: none;
-    } 
-    ul {
-        list-style: none;
-    }
-    nav {
+        font: {
+            family: paytone one,sans-serif;
+            size: 16px;
+            weight: 400;
+        } 
+    .row {
+        display: flex;
+        align-items: center;
         ul {
+            list-style: none;
             display: flex;
+            margin: 0;
+            padding: 0;
+            li {
+                text-transform: capitalize;
+                position: relative;
+                ul {
+                    display: none;
+                    position: absolute;
+                    width: 150px;
+                    background: white;
+                    li a {
+                        padding: 10px;
+                        margin: 5px;
+                        color: black;
+                        &:hover {
+                            background: #333;
+                        }
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    padding-bottom: 10px;
+                    color: white;
+                    margin: 10px;
+                    display: block;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+                .active {
+                    color: $yellow;
+                    margin-left: 0;
+                    text-decoration: underline;
+                    line-height: 1.5;
+                }
+            }
         }
     }
-}  
-
-.logo-img, .book_room {
-    display: flex;
 }
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    background: white;
+}
+
+#submenu:hover .submenu {
+    display: block;
+}
+
+.navigation-container, .box2 {
+    flex-basis: 50%;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
 
 .book_btn {
     a {
@@ -42,18 +96,10 @@ $yellow: #f2c64d;
         border: 1px solid $yellow;
         color: $yellow;
         border-radius: 30px;
-    &:hover {
-        background: $yellow;
-        color: white;
-    }
-    }
-}
-
-.socail_links {
-    i {
-        color: white;
         &:hover {
-            color: $yellow;
+            transition: background 0.3s ease-in-out;
+            background: $yellow;
+            color: white;
         }
-    }
+    }    
 }

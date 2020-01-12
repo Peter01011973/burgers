@@ -1,36 +1,104 @@
-.header {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-container {
+  padding: 0 20px;
   height: 100px;
+  width: 100%;
+  position: fixed;
   background: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   font-family: paytone one,sans-serif;
+  font-size: 16px;
   font-weight: 400;
 }
 
-.header li::first-letter {
-  text-transform: uppercase;
-  text-decoration: none;
+.header-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header ul {
+.header-container .row ul {
   list-style: none;
-}
-
-.header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.logo-img, .book_room {
+.header-container .row ul li {
+  text-transform: capitalize;
+  position: relative;
+}
+
+.header-container .row ul li ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+  background: white;
+}
+
+.header-container .row ul li ul li a {
+  padding: 10px;
+  margin: 5px;
+  color: black;
+}
+
+.header-container .row ul li ul li a:hover {
+  background: #333;
+}
+
+.header-container .row ul li a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: white;
+  margin: 10px;
+  display: block;
+}
+
+.header-container .row ul li a:hover {
+  color: #f2c64d;
+}
+
+.header-container .row ul li .active {
+  color: #f2c64d;
+  margin-left: 0;
+  text-decoration: underline;
+  line-height: 1.5;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 150px;
+  background: white;
+}
+
+#submenu:hover .submenu {
+  display: block;
+}
+
+.navigation-container, .box2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.box2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .book_btn a {
@@ -44,15 +112,9 @@
 }
 
 .book_btn a:hover {
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
   background: #f2c64d;
   color: white;
-}
-
-.socail_links i {
-  color: white;
-}
-
-.socail_links i:hover {
-  color: #f2c64d;
 }
 /*# sourceMappingURL=header.css.map */

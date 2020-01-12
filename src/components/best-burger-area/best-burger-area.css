@@ -1,0 +1,119 @@
+.best-burger-area {
+  background: url(../../assets/image/banner/burger_bg.png);
+  padding-top: 140px;
+  padding-bottom: 115px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.best-burger-area .container {
+  margin: 0 5%;
+}
+
+.best-burger-area .container .section_title {
+  margin-bottom: 100px;
+}
+
+.best-burger-area .container .section_title span {
+  color: #f2c64d;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  display: block;
+  text-align: center;
+  font-family: pacifico,cursive;
+}
+
+.best-burger-area .container .section_title h3 {
+  color: #1a0d01;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "MontserratBold";
+  text-align: center;
+  margin: 0 0 .5rem 0;
+}
+
+.best-burger-area .container .row {
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.best-burger-area .container .row .single_delicious {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  margin: 0 0 35px;
+}
+
+.best-burger-area .container .row .single_delicious .info {
+  margin-left: 20px;
+}
+
+.best-burger-area .container .row .single_delicious .info h3 {
+  font-size: 30px;
+  color: #1a0d01;
+  font-weight: 700;
+  font-family: "MontserratBold";
+  margin: 0 0 8px;
+}
+
+.best-burger-area .container .row .single_delicious .info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  color: #6e6e6e;
+  font-family: montserrat, sans-serif;
+}
+
+.best-burger-area .container .row .single_delicious .info span {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  color: #f0542c;
+  font-family: "MontserratBold";
+}
+
+.best-burger-area .container .iteam_links {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.best-burger-area .container .iteam_links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #f0542c;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 22px 44px;
+  font-size: 16px;
+  font-family: "MontserratBold";
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: #f0542c;
+  border-radius: 30px;
+}
+
+.best-burger-area .container .iteam_links a:hover {
+  background: #f0542c;
+  color: white;
+}
+/*# sourceMappingURL=best-burger-area.css.map */

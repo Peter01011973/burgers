@@ -6,6 +6,13 @@
 
 }
 
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('./fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 /*code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
