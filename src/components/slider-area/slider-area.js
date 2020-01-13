@@ -1,10 +1,10 @@
 import './slider-area.css';
 import React from 'react';
 
-const SliderArea = props => {
+const SliderArea = () => {
     return (
         <div className = 'slider-area'>
-            {props.children}
+
         </div>
     )
 }

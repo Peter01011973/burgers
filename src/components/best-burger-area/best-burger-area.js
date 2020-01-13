@@ -26,7 +26,7 @@ const FillDataToBurgerCard = ({ item: { image, name, text, price } }) => {
     )
 }
 
-const BestBurgeArea = () => {
+const BestBurgerArea = () => {
     const burgersArray = [
         {
             name: 'Beefy Burgers',
@@ -100,4 +100,4 @@ const BestBurgeArea = () => {
     )
 }
 
-export default BestBurgeArea;
+export default BestBurgerArea;

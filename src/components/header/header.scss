@@ -8,7 +8,8 @@
     padding: 0 150px;
     height: 100px;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
     background: black;
         font: {
             family: $font4Header;
