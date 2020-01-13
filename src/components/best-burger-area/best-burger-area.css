@@ -8,7 +8,10 @@
 }
 
 .best-burger-area .container {
-  margin: 0 5%;
+  display: block;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .best-burger-area .container .section_title {
@@ -19,10 +22,10 @@
   color: #f2c64d;
   font-size: 30px;
   font-weight: 400;
+  font-family: pacifico,cursive;
   margin-bottom: 18px;
   display: block;
   text-align: center;
-  font-family: pacifico,cursive;
 }
 
 .best-burger-area .container .section_title h3 {
@@ -35,16 +38,12 @@
 }
 
 .best-burger-area .container .row {
-  margin: 0 15px;
+  margin: 0 -15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
 }
 
 .best-burger-area .container .row .single_delicious {

@@ -1,7 +1,4 @@
-$red:  #f0542c;
-$fontBold: 'MontserratBold';
-$font: montserrat,sans-serif;
-$yellow: #f2c64d;
+@import '../global.scss';
 
 .Burger_President_area {
     display: flex;
@@ -10,20 +7,18 @@ $yellow: #f2c64d;
         width: 50%;
         display: flex;
         position: relative;
+        z-index: -1;
         img {
             width: 100%;
         }
         .room_heading {
             position: absolute;
-            // display: flex;
             display: block;
             justify-content: flex-end;
             align-items: flex-end;
             flex-direction: column;
             left: 70px;
             bottom: 60px;
-            // width: 60%;
-            // border: 2px solid wheat;
             font-family: $fontBold;
             span {
                 color: $red;

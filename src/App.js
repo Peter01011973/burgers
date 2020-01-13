@@ -4,6 +4,7 @@ import SliderArea from './components/slider-area/slider-area';
 import './App.css';
 import BestBurgeArea from './components/best-burger-area/best-burger-area';
 import PresidentBurgerArea from './components/president-burger-area/president-burger-area';
+import AboutArea from './components/about-area/about-area';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </SliderArea>
       <BestBurgeArea />
       <PresidentBurgerArea />
+      <AboutArea />
     </div>
   );
 }

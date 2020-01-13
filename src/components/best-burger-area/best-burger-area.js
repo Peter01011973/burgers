@@ -9,13 +9,30 @@ import burger6 from '../../assets/image/burger/6.png';
 import burger7 from '../../assets/image/burger/7.png';
 import burger8 from '../../assets/image/burger/8.png';
 
+const AddId = arr => arr.map((item, index) => ({...item, id :1000+index}))
+
+const FillDataToBurgerCard = ({ item: { image, name, text, price } }) => {
+    return (
+        <div className="single_delicious">
+            <div className="thumb">
+                <img src={image} alt="" />
+            </div>
+            <div className="info">
+                <h3>{name}</h3>
+                <p>{text}</p>
+                <span>{price}</span>
+            </div>
+        </div>
+    )
+}
+
 const BestBurgeArea = () => {
     const burgersArray = [
         {
             name: 'Beefy Burgers',
             image: burger1,
             text: 'Great way to make your business appear trust and relevant.',
-            price: '$5'
+            price: '$5',
         },
         {
             name: 'Burger Boys',
@@ -61,39 +78,22 @@ const BestBurgeArea = () => {
         }
     ]
 
-    const renderBurgers = burgersArray.map(({image, name, text, price}) => {
-        return (
-            <div className="single_delicious">
-                <div className="thumb">
-                    <img src={image} alt="" />
-                </div>
-                <div className="info">
-                    <h3>{name}</h3>
-                    <p>{text}</p>
-                    <span>{price}</span>
-                </div>
-            </div>
-        )
-    })
-
+    const renderBurgers = AddId(burgersArray).map(item => <FillDataToBurgerCard key = {item.id} item = {item}/> )
+    
     return (
         <div className='best-burger-area'>
             <div className="container">
-                <div className="col-lg-12">
-                    <div className="section_title text-center mb-80">
-                        <span>Burger Menu</span>
-                        <h3>Best Ever Burgers</h3>
-                    </div>
+                <div className="section_title text-center mb-80">
+                    <span>Burger Menu</span>
+                    <h3>Best Ever Burgers</h3>
                 </div>
                 <div className="row">
                     {renderBurgers}
                 </div>
                 <div className="row">
-                    {/* <div className="col-lg-12"> */}
-                        <div className="iteam_links">
-                            <a className="boxed-btn5" href="Menu.html">More Items</a>
-                        </div>
-                    {/* </div> */}
+                    <div className="iteam_links">
+                        <a className="boxed-btn5" href="Menu.html">More Items</a>
+                    </div>
                 </div>
             </div>
         </div>

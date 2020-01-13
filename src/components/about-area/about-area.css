@@ -1,0 +1,94 @@
+.about-area .about-area__container {
+  display: block;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.about-area {
+  background: url(../../assets/image/banner/burger_bg_1.png);
+  padding-top: 150px;
+  padding-bottom: 210px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about-area .about-area__container .about-area__row {
+  margin: 0 -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-area .about-area__container .about-area__row .about-area__images {
+  z-index: -1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+}
+
+.about-area .about-area__container .about-area__row .about-area__images .about-area__image1 {
+  display: block;
+}
+
+.about-area .about-area__container .about-area__row .about-area__images .about-area__image1 .about-area__img-1 {
+  width: 100%;
+}
+
+.about-area .about-area__container .about-area__row .about-area__images .about-area__image2 {
+  z-index: 0;
+  display: block;
+  position: absolute;
+  right: -30px;
+  bottom: -60px;
+}
+
+.about-area .about-area__container .about-area__row .about-area__images .about-area__image2 .about-area__img-2 {
+  width: 100%;
+}
+
+.about-area .about-area__container .about-area__row .about-area-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.666667%;
+          flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  margin-left: 95px;
+  margin-top: 33px;
+}
+
+.about-area .about-area__container .about-area__row .about-area-info .about-area-info__title {
+  display: block;
+  color: #f2c64d;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: pacifico,cursive;
+  margin-bottom: 18px;
+}
+
+.about-area .about-area__container .about-area__row .about-area-info .about-area-info__subtitle {
+  color: #1a0d01;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "MontserratBold";
+  margin: 0 0 21px;
+}
+
+.about-area .about-area__container .about-area__row .about-area-info .about-area-info__text {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 37px;
+  font-weight: 300;
+  color: #6e6e6e;
+  margin-bottom: 13px;
+  font-family: raleway,sans-serif;
+}
+/*# sourceMappingURL=about-area.css.map */

@@ -1,0 +1,31 @@
+// colors
+$black: #1a0d01;
+$gray: #6e6e6e;
+$red:  #f0542c;
+$yellow: #f2c64d;
+
+// fonts
+$font4Header: paytone one,sans-serif;
+$fontBold: 'MontserratBold';
+$font: montserrat,sans-serif;
+
+%setting-4-container {
+    display: block;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@mixin pacificoFont($size) {
+    color: $yellow;
+    font-size: $size;
+    font-weight: 400;
+    font-family: pacifico,cursive;    
+}
+
+@mixin montserratBold($size) {
+    color: $black;
+    font-size: $size;
+    text-transform: uppercase;
+    font-family: $fontBold;
+}

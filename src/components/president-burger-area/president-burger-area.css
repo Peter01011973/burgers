@@ -10,6 +10,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  z-index: -1;
 }
 
 .Burger_President_area .single_Burger_President img {

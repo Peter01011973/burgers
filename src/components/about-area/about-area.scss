@@ -1,0 +1,64 @@
+@import '../global.scss';
+
+.about-area {
+    background: url(../../assets/image/banner/burger_bg_1.png);
+    padding-top: 150px;
+    padding-bottom: 210px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+    
+    .about-area__container {
+        @extend %setting-4-container;
+        .about-area__row { 
+            margin: 0 -15px;
+            display: flex;
+            flex-wrap: wrap;
+            .about-area__images { 
+                z-index: -1;
+                flex: 0 0 50%;
+                max-width: 50%;
+                position: relative;
+                .about-area__image1 { 
+                    display: block;
+                    .about-area__img-1 {width: 100%;}   
+                }
+                .about-area__image2 {
+                    z-index: 0;
+                    display: block;
+                    position: absolute;
+                    right: -30px;
+                    bottom: -60px;
+                    .about-area__img-2 {width: 100%;}
+                }
+            }
+            .about-area-info {
+                display: flex;
+                flex: 0 0 41.666667%;
+                max-width: 41.666667%;
+                margin-left: 95px;
+                margin-top: 33px;
+                .about-area-info__title {
+                    display: block;
+                    @include pacificoFont(30px);
+                    margin-bottom: 18px;
+                }
+                .about-area-info__subtitle {    
+                    @include montserratBold(50px);
+                    margin: 0 0 21px ;
+                }
+                .about-area-info__text {
+                    font-size: 16px;
+                    line-height: 28px;
+                    margin-top: 0;
+                    margin-bottom: 37px;
+                    font-weight: 300;
+                    color: $gray;
+                    margin-bottom: 13px;
+                    font-family: raleway,sans-serif;
+                }
+            }
+        }
+    }
+}
+
