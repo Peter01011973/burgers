@@ -1,8 +1,48 @@
 .slider-area {
-  background: url(https://colorlib.com/preview/theme/burger/img/banner/banner.png);
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: relative;
+}
+
+.slider-area-navigation {
+  display: block;
+}
+
+.slider-area-navigation__prev {
+  left: 0;
+  position: absolute;
+  height: 120px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 390px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider-area-navigation__prev-i {
+  color: white;
+  font-size: 33px;
+  padding-top: 43.5px;
+}
+
+.slider-area-navigation__next {
+  right: 0;
+  position: absolute;
+  height: 120px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 390px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider-area-navigation__next-i {
+  color: white;
+  font-size: 33px;
+  padding-top: 43.5px;
 }
 /*# sourceMappingURL=slider-area.css.map */

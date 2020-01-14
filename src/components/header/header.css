@@ -11,6 +11,7 @@
   position: sticky;
   top: 0;
   background: black;
+  z-index: 99;
   font-family: paytone one, sans-serif;
   font-size: 16px;
   font-weight: 400;

@@ -1,24 +1,38 @@
+$height: 900px;
+$fontSize: 33px;
+$navButtonDivHeight: 120px;
+@mixin buttonDivAtribute() {
+    position: absolute;
+    height: $navButtonDivHeight;
+    width: 50px;
+    background: rgba(255,255,255,.2);
+    top: ($height - $navButtonDivHeight)/2;
+    text-align: center;
+    cursor: pointer;    
+    &-i {
+        color: white;
+        font-size: $fontSize;
+        padding-top: ($navButtonDivHeight - $fontSize)/2; 
+    }  
+}
+
 .slider-area {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    background: url(https://colorlib.com/preview/theme/burger/img/banner/banner.png);
-    height: 900px;
+    height: $height;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    // z-index: 9;
-    // align-items: center;
-    // display: flex;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // height: 900px;
-    // background-position-x: 50%;
-    // background-position-y: 50%;
-    // background: {
-    //     size: cover;
-    //     repeat: no-repeat;
-    //     position: center center;
-    // }
+    transition: .5s ease-in-out;
+    position: relative;
+    &-navigation {
+        display: block;
+        &__prev {
+            left: 0;
+            @include buttonDivAtribute();
+        }
+        &__next {
+            right: 0;
+            @include buttonDivAtribute();
+            
+        }
+    }
 }

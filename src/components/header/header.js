@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import logo from '../../assets/image/logo.png';
+import {NavLink} from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -9,9 +10,10 @@ const Header = () => {
                 <div className="navigation-container">
                     <nav>
                         <ul id="navigation">
-                            <li><a className="active" href="#">home</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><NavLink to='/home' exact activeClassName="active">home</NavLink></li>
+                            <li><NavLink to='/menu' activeClassName="active">Menu</NavLink></li>
+                            {/* <li><NavLink to='/menu_pres' activeClassName="active">President menu</NavLink></li>                             */}
+                            <li><NavLink to='/about' activeClassName="active">About</NavLink></li>
                             <li id='submenu'><a href="#">blog <i className="fa fa-angle-down"></i></a>
                                 <ul className="submenu">
                                     <li><a href="#">blog</a></li>
@@ -23,7 +25,7 @@ const Header = () => {
                                     <li><a href="#">elements</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Contact</a></li>
+                            <li><NavLink to='/contact' activeClassName="active">Contact</NavLink></li>
                         </ul>
                     </nav>
                 </div>
