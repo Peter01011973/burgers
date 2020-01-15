@@ -12,7 +12,6 @@ const Header = () => {
                         <ul id="navigation">
                             <li><NavLink to='/home' exact activeClassName="active">home</NavLink></li>
                             <li><NavLink to='/menu' activeClassName="active">Menu</NavLink></li>
-                            {/* <li><NavLink to='/menu_pres' activeClassName="active">President menu</NavLink></li>                             */}
                             <li><NavLink to='/about' activeClassName="active">About</NavLink></li>
                             <li id='submenu'><a href="#">blog <i className="fa fa-angle-down"></i></a>
                                 <ul className="submenu">

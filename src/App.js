@@ -7,6 +7,7 @@ import AboutArea from './components/about-area/about-area';
 import {Switch, Route} from 'react-router-dom';
 import Layout from './HOC/layout/layout';
 import AllBurgersMenu from './components/all-menu/all-menu';
+import Contact from './components/contact/contact';
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
           <Route path='/home'><SliderArea /></Route>
           <Route path='/about'><AboutArea /></Route>
           <Route path='/menu'><AllBurgersMenu /></Route>
+          <Route path='/contact'><Contact /></Route>
           {/* <Route component = {NotFound}/> */}
         </Switch>
    </Layout>

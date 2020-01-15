@@ -1,0 +1,168 @@
+.contact-container-row__edit .information textarea, .contact-container-row__edit .information .form-group input, .contact-container-row__edit .information input {
+  border: 1px solid #e5e6e9;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-container-row__edit .information textarea::-webkit-input-placeholder, .contact-container-row__edit .information .form-group input::-webkit-input-placeholder, .contact-container-row__edit .information input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #C0C0C0;
+}
+
+.contact-container-row__edit .information textarea:-ms-input-placeholder, .contact-container-row__edit .information .form-group input:-ms-input-placeholder, .contact-container-row__edit .information input:-ms-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #C0C0C0;
+}
+
+.contact-container-row__edit .information textarea::-ms-input-placeholder, .contact-container-row__edit .information .form-group input::-ms-input-placeholder, .contact-container-row__edit .information input::-ms-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #C0C0C0;
+}
+
+.contact-container-row__edit .information textarea::placeholder, .contact-container-row__edit .information .form-group input::placeholder, .contact-container-row__edit .information input::placeholder {
+  /* Chrome/Opera/Safari */
+  color: #C0C0C0;
+}
+
+.contact {
+  padding: 3% 0 3%;
+}
+
+.contact-container {
+  display: block;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.contact-container-map {
+  height: 500px;
+  margin-bottom: 1rem;
+}
+
+.contact-container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-container-row__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  min-width: 100%;
+}
+
+.contact-container-row__title h2 {
+  font-family: raleway, sans-serif;
+  font-size: 1.7rem;
+}
+
+.contact-container-row__edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 67%;
+          flex: 0 0 67%;
+  min-width: 67%;
+}
+
+.contact-container-row__edit .information {
+  width: 100%;
+  font-family: raleway, sans-serif;
+}
+
+.contact-container-row__edit .information textarea {
+  width: 100%;
+  padding: 1.2rem 0 0 1.2rem;
+}
+
+.contact-container-row__edit .information .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  min-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-container-row__edit .information .form-group input {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  width: 48%;
+  height: 3rem;
+  border: 1px solid #e5e6e9;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-container-row__edit .information input {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid #e5e6e9;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-container-row__edit .information .SENDbutton {
+  background: none;
+  border: 1px solid #f0542c;
+  color: #f0542c;
+  padding: 12px 44px;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-family: montserrat, sans-serif;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.contact-container-row__edit .information .SENDbutton:hover {
+  background: #f0542c;
+  color: white;
+}
+
+.contact-container-row__contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  min-width: 33%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container-row__contactInfo .peiceOfInfo {
+  padding-left: 8rem;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container-row__contactInfo .peiceOfInfo i {
+  font-size: 2rem;
+  color: #C0C0C0;
+}
+
+.contact-container-row__contactInfo .peiceOfInfo h3, .contact-container-row__contactInfo .peiceOfInfo p {
+  margin: 0.1rem 0rem 0.5rem 1rem;
+  font-family: raleway, sans-serif;
+  color: #6e6e6e;
+}
+/*# sourceMappingURL=contact.css.map */

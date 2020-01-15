@@ -1,0 +1,59 @@
+@import '../global.scss';
+
+.footer {
+    background: url(../../assets/image/banner/footer_bg.png);
+    padding: 113px 0 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    &-top {
+        display: block;
+        width: 1140px;
+        margin: 0 auto; 
+        &-container {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            &__item {
+                text-align: center;
+                display: flex;
+                flex: 0 0 31%;
+                min-width: 31%;
+                flex-direction: column; 
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0 0 39px;
+                    color: $black;
+                    font-family: $fontBold;
+                }
+                p, a {
+                    font-size: 16px;
+                    margin: 0;
+                    font-weight: 400;
+                    line-height: 28px;
+                    color: $gray;
+                    font-family: $fondSecondary;
+                }
+                a {
+                    text-decoration: none;
+                }
+                .phone {
+                    color: $red;
+                    font-family: $font;
+                    font-weight: 600;
+                    margin-top: 1rem;
+                    font-size: 1.3rem;
+                }
+
+            }
+            .withInput {
+                text-align: left;
+                input {
+                    @include input_in_contact(100%);
+                    border-radius: 28px;
+                }  
+            }            
+        }       
+    } 
+}

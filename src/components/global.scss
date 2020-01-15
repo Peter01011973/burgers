@@ -3,11 +3,14 @@ $black: #1a0d01;
 $gray: #6e6e6e;
 $red:  #f0542c;
 $yellow: #f2c64d;
+$editBorder: #e5e6e9;
+$editPlaceHolder: #C0C0C0;
 
 // fonts
 $font4Header: paytone one,sans-serif;
 $fontBold: 'MontserratBold';
 $font: montserrat,sans-serif;
+$fondSecondary: raleway,sans-serif;
 
 %setting-4-container {
     display: block;
@@ -28,4 +31,24 @@ $font: montserrat,sans-serif;
     font-size: $size;
     text-transform: uppercase;
     font-family: $fontBold;
+}
+
+%placeHolderSetting {
+    border: 1px solid $editBorder;
+    font-size: 1rem;
+    font-family: inherit;
+    &::placeholder { /* Chrome/Opera/Safari */
+        color: $editPlaceHolder;
+    }    
+}
+
+@mixin input_in_contact($width) {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    width: $width;
+    height: 3rem;
+    border: 1px solid $editBorder;
+    font-size: 1rem;
+    font-family: inherit;
+    @extend %placeHolderSetting;    
 }

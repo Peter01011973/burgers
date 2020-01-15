@@ -1,0 +1,89 @@
+@import '../global.scss';
+
+.contact {
+    padding: 3% 0 3%;
+    &-container {
+        display: block;
+        width: 1140px;
+        margin: 0 auto;
+        &-map {
+            height: 500px;
+            margin-bottom: 1rem;
+        }
+        &-row {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            &__title {
+                display: flex;
+                flex: 0 0 100%;
+                min-width: 100%;
+                h2 {
+                    font-family: $fondSecondary;
+                    font-size: 1.7rem;
+                }
+            }
+            &__edit {
+                display: flex;
+                flex: 0 0 67%;
+                min-width: 67%; 
+                .information {
+                    width: 100%;
+                    font-family: $fondSecondary;
+                    textarea {
+                        width: 100%;
+                        padding: 1.2rem 0 0 1.2rem;
+                        @extend %placeHolderSetting;
+                    }
+                    .form-group {
+                        display: flex;
+                        flex: 0 0 100%;
+                        min-width: 100%;
+                        justify-content: space-between;
+                        input {
+                            @include input_in_contact(48%);
+                        }       
+                    }
+                    input {
+                        @include input_in_contact(100%);                       
+                    }
+                    .SENDbutton {
+                        background: none;
+                        border: 1px solid $red;
+                        color: $red;
+                        padding: 12px 44px;
+                        margin-top: 3rem;
+                        font-size: 1.2rem;
+                        font-family: $font;
+                        transition: .2s ease-in-out;
+                        &:hover {
+                            background: $red;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            &__contactInfo {
+                display: flex;
+                flex: 0 0 33%;
+                min-width: 33%;
+                flex-direction: column;  
+                .peiceOfInfo {
+                    padding-left: 8rem;
+                    margin-bottom: 3rem;
+                    display: flex;
+                    i {
+                        font-size: 2rem;
+                        color: $editPlaceHolder;
+                    }
+                    h3, p {
+                        margin: 0.1rem 0rem 0.5rem 1rem;
+                        font-family: $fondSecondary; 
+                        color: $gray;
+                    }
+                }               
+            }
+
+        }    
+    }
+}
