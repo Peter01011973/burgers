@@ -1,69 +1,44 @@
 import React from 'react';
 import './header.css';
 import logo from '../../assets/image/logo.png';
-import {NavLink} from 'react-router-dom';
+import NavMenu from './nav-menu/nav-menu';
+import SocailLinkMenu from '../header/social-link-menu/social-link-menu';
+import DrawerToggleButton from './drawerToggleButton/drawerToggleButton';
+
+const mobileMenu = () => {
+    console.log('gfgfgf');
+    
+    return (
+        <NavMenu render = {'Yes'}/>
+    )
+}
 
 const Header = () => {
     return (
-        <div className="header-container">
-            <div className='row'>
-                <div className="navigation-container">
-                    <nav>
-                        <ul id="navigation">
-                            <li><NavLink to='/home' exact activeClassName="active">home</NavLink></li>
-                            <li><NavLink to='/menu' activeClassName="active">Menu</NavLink></li>
-                            <li><NavLink to='/about' activeClassName="active">About</NavLink></li>
-                            <li id='submenu'><a href="#">blog <i className="fa fa-angle-down"></i></a>
-                                <ul className="submenu">
-                                    <li><a href="#">blog</a></li>
-                                    <li><a href="#">single-blog</a></li>
-                                </ul>
-                            </li>
-                            <li id='submenu'><a href="#">Pages <i className="fa fa-angle-down"></i></a>
-                                <ul className="submenu">
-                                    <li><a href="#">elements</a></li>
-                                </ul>
-                            </li>
-                            <li><NavLink to='/contact' activeClassName="active">Contact</NavLink></li>
-                        </ul>
-                    </nav>
+        <header className="header">
+
+            <div className='header__row'>
+                <div className="header__row-navigation">
+                    <NavMenu />
                 </div>
-                <div className="logo-img">
-                    <a href="#">
-                        <img src={logo} alt="logo" />
-                    </a>
+                <div header__row-logo>
+                    <a className="logo-img" href="#"><img className='logo_img' src={logo} alt="logo" /></a>
                 </div>
-                <div className="box2">
+                <div className="header__row-info">
                     <div className="socail_links">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i className="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <SocailLinkMenu />
                     </div>
-                    <div className="book_btn d-none d-xl-block">
+                    <div className="book_btn">
                         <a className="#" href="#">+10 367 453 7382</a>
                     </div>
                 </div>
             </div>
-        </div>
+            <div className='mobile-menu'>
+                <a className="logo-img" href="#"><img className='logo_img' src={logo} alt="logo" /></a>
+                <DrawerToggleButton/>
+                <a className='btn' onClick = {mobileMenu}><i className="fa fa-bars"></i></a>
+            </div>
+        </header>
     )
 }
 

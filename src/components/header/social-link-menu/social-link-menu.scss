@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.socialLink {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    &-item {
+        display: block;
+        margin-right: 1.5rem;
+        text-decoration: none;
+        color: white;
+        &:hover {color: $yellow;}
+    }
+}
+
+@media screen and (max-width: 620px){
+    .socialLink {
+        display: none;
+    }
+}

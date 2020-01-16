@@ -10,7 +10,7 @@ $editPlaceHolder: #C0C0C0;
 $font4Header: paytone one,sans-serif;
 $fontBold: 'MontserratBold';
 $font: montserrat,sans-serif;
-$fondSecondary: raleway,sans-serif;
+$fontSecondary: raleway,sans-serif;
 
 %setting-4-container {
     display: block;
@@ -49,6 +49,6 @@ $fondSecondary: raleway,sans-serif;
     height: 3rem;
     border: 1px solid $editBorder;
     font-size: 1rem;
-    font-family: inherit;
+    font-family: $font;
     @extend %placeHolderSetting;    
 }

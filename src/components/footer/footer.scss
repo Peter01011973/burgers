@@ -2,7 +2,7 @@
 
 .footer {
     background: url(../../assets/image/banner/footer_bg.png);
-    padding: 113px 0 100px;
+    padding-top: 113px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -33,7 +33,7 @@
                     font-weight: 400;
                     line-height: 28px;
                     color: $gray;
-                    font-family: $fondSecondary;
+                    font-family: $fontSecondary;
                 }
                 a {
                     text-decoration: none;
@@ -49,11 +49,82 @@
             }
             .withInput {
                 text-align: left;
-                input {
-                    @include input_in_contact(100%);
-                    border-radius: 28px;
-                }  
+                margin-left: 3rem;
+                form {
+                    position: relative;
+                    margin-bottom: 2rem;
+                    input {
+                        @include input_in_contact(100%);
+                        margin: 0;
+                        border-radius: 28px;
+                    }
+                    button {
+                        position: absolute;
+                        bottom: 3px;
+                        right: 5px;
+                        padding: 11px 24px;
+                        border-radius: 24px;
+                        background: $red;
+                        box-shadow: none;
+                        border: none;
+                        font-family: $fontSecondary;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: white;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }  
+                }
             }            
-        }       
+        }
+        &__social-link-container {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    a {
+                        display: inline-block;
+                        height: 50px;
+                        width: 50px;
+                        text-align: center;
+                        line-height: 50px;;
+                        color: $red;
+                        font-size: 1.3rem;
+                        border: 1px dashed $red;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        transition: .2s ease-in-out;
+                        &:hover {
+                            color: white;
+                            background: $red;
+                        }
+                    }
+                }
+            }
+        }
+        &-copyright {
+            margin-top: 3rem;
+            border-top: 1px solid $editBorder;
+            text-align: center;
+            p {
+                padding: 2rem 0;
+                color: $editPlaceHolder;
+                font-weight: 500;
+                font-family: $fontSecondary;
+                margin: 0;
+                a {
+                    color: $red;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+        }
+
     } 
+       
 }
