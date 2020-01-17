@@ -1,8 +1,11 @@
 .slider-area {
-  height: 900px;
+  display: block;
+  max-height: 900px;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   position: relative;
@@ -18,7 +21,7 @@
   height: 120px;
   width: 50px;
   background: rgba(255, 255, 255, 0.2);
-  top: 390px;
+  top: 50%;
   text-align: center;
   cursor: pointer;
 }
@@ -35,7 +38,7 @@
   height: 120px;
   width: 50px;
   background: rgba(255, 255, 255, 0.2);
-  top: 390px;
+  top: 50%;
   text-align: center;
   cursor: pointer;
 }

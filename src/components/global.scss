@@ -42,13 +42,3 @@ $fontSecondary: raleway,sans-serif;
     }    
 }
 
-@mixin input_in_contact($width) {
-    margin-top: 2rem;
-    padding-left: 1rem;
-    width: $width;
-    height: 3rem;
-    border: 1px solid $editBorder;
-    font-size: 1rem;
-    font-family: $font;
-    @extend %placeHolderSetting;    
-}

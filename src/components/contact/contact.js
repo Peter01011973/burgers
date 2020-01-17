@@ -21,7 +21,7 @@ const Contact = ({isGeolocationAvailable, isGeolocationEnabled, coords}) => {
                     </div>
                     <div className = 'contact-container-row__edit'>
                         <form className = 'information'>
-                            <textarea cols='30' rows='9' placeholder='Enter Message'></textarea>
+                            <textarea cols='28' rows='9' placeholder='Enter Message'></textarea>
                             <div className = 'form-group'>
                                 <input placeholder='Enter your name'/>
                                 <input placeholder='Email'/>

@@ -46,7 +46,7 @@
 .nav-menu__item__submenu {
     display: none;
     position: absolute;
-    width: 160px;
+    width: 170px;
     background: white;
     list-style: none; //
     margin: 0; //
@@ -54,7 +54,7 @@
     .subitem {
         display: block;
         text-decoration: none; 
-        color: black; 
+        color: black;
         padding: 5px 5px;
         margin: 5px;
         &:hover {
@@ -65,7 +65,7 @@
 }
 
 .submenu:hover .nav-menu__item__submenu {
-    display: flex;
+    display: block;
 }
 
 @media screen and (max-width: 1350px) {
@@ -76,6 +76,17 @@
 
 @media screen and (max-width: 620px){
     .nav-menu {
-        display: none;
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        background: $red;
+        &__item {
+            margin: 0.5rem;   
+        }
+    }
+    .nav-menu__item__submenu {
+        top: -5px;
+        right: 63px;
     }
 }

@@ -52,7 +52,7 @@
 .nav-menu__item__submenu {
   display: none;
   position: absolute;
-  width: 160px;
+  width: 170px;
   background: white;
   list-style: none;
   margin: 0;
@@ -73,9 +73,7 @@
 }
 
 .submenu:hover .nav-menu__item__submenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 @media screen and (max-width: 1350px) {
@@ -86,7 +84,18 @@
 
 @media screen and (max-width: 620px) {
   .nav-menu {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: #f0542c;
+  }
+  .nav-menu__item {
+    margin: 0.5rem;
+  }
+  .nav-menu__item__submenu {
+    top: -5px;
+    right: 63px;
   }
 }
 /*# sourceMappingURL=nav-menu.css.map */

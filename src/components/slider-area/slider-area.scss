@@ -6,7 +6,8 @@ $navButtonDivHeight: 120px;
     height: $navButtonDivHeight;
     width: 50px;
     background: rgba(255,255,255,.2);
-    top: ($height - $navButtonDivHeight)/2;
+    // top: ($height - $navButtonDivHeight)/2;
+    top: 50%;
     text-align: center;
     cursor: pointer;    
     &-i {
@@ -17,10 +18,14 @@ $navButtonDivHeight: 120px;
 }
 
 .slider-area {
-    height: $height;
+    display: block;
+    max-height: $height;
+    height: 100vh;
+    // width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     transition: .5s ease-in-out;
     position: relative;
     &-navigation {

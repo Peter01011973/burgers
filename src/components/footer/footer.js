@@ -27,33 +27,16 @@ const Footer = () => {
                 </div>
                 <div className='footer-top__social-link-container'>
                     <ul>
-                        <li>
-                            <a href="#">
-                                <i className="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i className="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i className="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i className="fa fa-google-plus"></i>
-                            </a>
-                        </li>
+                        <li><a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
                 <div className='footer-top-copyright'>
                     <p>Copyright ©2020 All rights reserved | This template is made with  by <i className="fa fa-heart-o"></i> <a href='#'>Colorlib</a></p>
                 </div>
             </div>
-
         </div>
     )
 }

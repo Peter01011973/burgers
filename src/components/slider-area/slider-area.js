@@ -20,7 +20,9 @@ export default class SliderArea extends Component {
 
     render() {
         return (
-            <div className='slider-area' style={{ background: backgroundImage[this.state.currentPos] }}>
+            <div className='slider-area' style={{ backgroundImage: backgroundImage[this.state.currentPos] }}>
+            {/* <div className='slider-area' > */}
+                {/* <img src = {banner}/> */}
                 <div className='slider-area-navigation'>
                     <div className='slider-area-navigation__prev' onClick={this.changeBackground.bind(this, -1)}>
                         <i className="slider-area-navigation__prev-i fa fa-angle-left"></i>

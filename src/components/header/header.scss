@@ -5,8 +5,8 @@
     width: 100%; //
     position: sticky; //
     background: black;//
-    left: 0; //
-    top: 0; //
+    left: 0; 
+    top: 0; 
     padding: 0 150px;
     z-index: 99;
     box-sizing: border-box;
@@ -16,9 +16,9 @@
             weight: 400;
         } 
     &__row {
-        display: flex; //
-        align-items: center; //
-        height: 100%; //
+        display: flex; 
+        align-items: center; 
+        height: 100%; 
     }
     .logo-img {
         display: block;
@@ -92,12 +92,9 @@
             padding: 10px;
             justify-content: space-between;
             align-items: center;
+            position: relative;
             .btn {
                 display: block;
-                font-size: 2rem;
-                background: transparent; 
-                color: red; 
-                cursor: pointer;
             }
             .logo_img {
                 display: block;

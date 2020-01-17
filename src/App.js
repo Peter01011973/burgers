@@ -8,18 +8,19 @@ import {Switch, Route} from 'react-router-dom';
 import Layout from './HOC/layout/layout';
 import AllBurgersMenu from './components/all-menu/all-menu';
 import Contact from './components/contact/contact';
+import NotFound from './components/not-found/not-found';
 
 function App() {
   
   return (
-    <Layout>
+     <Layout>
         <Switch>
           <Route path='/' exact component={AboutArea} />
           <Route path='/home'><SliderArea /></Route>
           <Route path='/about'><AboutArea /></Route>
           <Route path='/menu'><AllBurgersMenu /></Route>
           <Route path='/contact'><Contact /></Route>
-          {/* <Route component = {NotFound}/> */}
+          <Route component = {NotFound}/>
         </Switch>
    </Layout>
   );
