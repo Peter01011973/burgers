@@ -11,7 +11,7 @@ const Contact = ({isGeolocationAvailable, isGeolocationEnabled, coords}) => {
                 <div className='contact-container-map'>
                     {
                         (isGeolocationAvailable && isGeolocationEnabled && coords)
-                            ? <MapContainer className='contact-container-map' coords={coords} mapStyles={{ width: '1140px', height: '500px' }} />
+                            ? <MapContainer className='contact-container-map' coords={coords} mapStyles={{ width: '100%', height: '70vh' }} />
                             : <h3>Loading...</h3>
                     }
                 </div>

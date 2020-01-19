@@ -32,12 +32,11 @@
   display: block;
   max-width: 1140px;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
 }
 
 .contact-container-map {
-  height: 500px;
+  height: 70vh;
   margin-bottom: 1rem;
   position: relative;
   overflow: hidden;
@@ -56,10 +55,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  min-width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .contact-container-row__title h2 {
@@ -71,19 +68,27 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 65%;
-          flex: 0 0 65%;
-  min-width: 65%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact-container-row__edit .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   font-family: raleway, sans-serif;
 }
 
 .contact-container-row__edit .information textarea {
-  width: 100%;
   padding: 1.2rem 0 0 1.2rem;
 }
 
@@ -91,9 +96,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -101,9 +103,9 @@
 }
 
 .contact-container-row__edit .information .form-group input {
+  width: 47%;
   margin-top: 2rem;
   padding-left: 1rem;
-  width: 47%;
   height: 3rem;
   border: 1px solid #e5e6e9;
   font-size: 1rem;
@@ -113,7 +115,6 @@
 .contact-container-row__edit .information input {
   margin-top: 2rem;
   padding-left: 1rem;
-  width: 100%;
   height: 3rem;
   border: 1px solid #e5e6e9;
   font-size: 1rem;

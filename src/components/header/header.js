@@ -19,19 +19,19 @@ export default class Header extends Component {
         return (
             <header className="header">
 
-                <div className='header__row'>
-                    <div className="header__row-navigation">
+                <div className='container header__container'>
+                    <div className="container__navmenu">
                         <NavMenu />
                     </div>
-                    <div className='header__row-logo'>
-                        <a className="logo-img" href="#"><img className='logo_img' src={logo} alt="logo" /></a>
+                    <div className='logo container__logo'>
+                        <a className="logo__link" href="#"><img className='logo__img' src={logo} alt="logo" /></a>
                     </div>
-                    <div className="header__row-info">
-                        <div className="socail_links">
+                    <div className="info container__info">
+                        <div className="info__socail_links">
                             <SocailLinkMenu />
                         </div>
-                        <div className="book_btn">
-                            <a className="#" href="#">+10 367 453 7382</a>
+                        <div className="info__book_btn">
+                            <a className="info__link" href="#">+10 367 453 7382</a>
                         </div>
                     </div>
                 </div>

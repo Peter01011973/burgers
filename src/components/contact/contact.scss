@@ -1,9 +1,8 @@
 @import '../global.scss';
 
-@mixin input_in_contact($width) {
+@mixin input_in_contact() {
     margin-top: 2rem;
     padding-left: 1rem;
-    width: $width;
     height: 3rem;
     border: 1px solid $editBorder;
     font-size: 1rem;
@@ -17,10 +16,10 @@
         display: block;
         max-width: 1140px;
         width: 100%;
-        height: 100%;
         margin: 0 auto;
         &-map {
-            height: 500px;
+            // height: 500px;
+            height: 70vh;
             margin-bottom: 1rem;
             position: relative;
             overflow: hidden;
@@ -31,8 +30,7 @@
             flex-wrap: wrap;
             &__title {
                 display: flex;
-                flex: 0 0 100%;
-                min-width: 100%;
+                flex-basis: 100%;
                 h2 {
                     font-family: $fontSecondary;
                     font-size: 1.7rem;
@@ -40,28 +38,28 @@
             }
             &__edit {
                 display: flex;
-                flex: 0 0 65%;
-                min-width: 65%; 
+                flex-basis: 65%;
+                flex-direction: column;
                 .information {
+                    display: flex;
+                    flex-direction: column;
                     width: 100%;
                     font-family: $fontSecondary;
                     textarea {
-                        width: 100%;
                         padding: 1.2rem 0 0 1.2rem;
                         @extend %placeHolderSetting;
                     }
                     .form-group {
                         display: flex;
-                        flex: 0 0 100%; 
                         width: 100%;
                         justify-content: space-between;
                         input {
-                            @include input_in_contact(47%);
+                            width: 47%;
+                            @include input_in_contact();
                         }       
                     }
                     input {
-
-                        @include input_in_contact(100%);                       
+                        @include input_in_contact();                       
                     }
                     .SENDbutton {
                         background: none;
