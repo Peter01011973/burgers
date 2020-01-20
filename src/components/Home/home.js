@@ -1,4 +1,4 @@
-import './slider-area.css';
+import './home.css';
 import React, { Component } from "react";
 import banner from '../../assets/image/banner/banner.png';
 import banner2 from '../../assets/image/banner/banner2.png';
@@ -8,7 +8,7 @@ const backgroundImage = [
     `url(${banner2})`
 ]
 
-export default class SliderArea extends Component {
+export default class Home extends Component {
     state = { currentPos: 0 }
 
     changeBackground = (index) => {
@@ -19,16 +19,17 @@ export default class SliderArea extends Component {
     }
 
     render() {
+        
         return (
-            <div className='slider-area' style={{ backgroundImage: backgroundImage[this.state.currentPos] }}>
+            <div className='slider' >
             {/* <div className='slider-area' > */}
                 {/* <img src = {banner}/> */}
-                <div className='slider-area-navigation'>
-                    <div className='slider-area-navigation__prev' onClick={this.changeBackground.bind(this, -1)}>
-                        <i className="slider-area-navigation__prev-i fa fa-angle-left"></i>
+                <div className='slide current' style={{ backgroundImage: backgroundImage[this.state.currentPos] }}>
+                    <div className='slide__prev' onClick={this.changeBackground.bind(this, -1)}>
+                        <i className="fa fa-angle-left"></i>
                     </div>
-                    <div className='slider-area-navigation__next' onClick={this.changeBackground.bind(this, 1)}>
-                        <i className='slider-area-navigation__next-i fa fa-angle-right' />
+                    <div className='slide__next' onClick={this.changeBackground.bind(this, 1)}>
+                        <i className='fa fa-angle-right' />
                     </div>
                 </div>
             </div>

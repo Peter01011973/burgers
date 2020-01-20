@@ -1,10 +1,10 @@
-import './about-area.css';
+import './about.css';
 import React from 'react';
 import image1 from '../../assets/image/about/1.png';
 import image2 from '../../assets/image/about/2.png';
 // import signature from '../../assets/image/about/jessica-signature.png'
 
-const AboutArea = () => {
+const About = () => {
     return (
         <div className='about-area'>
             <div className='about-area__container'>
@@ -33,4 +33,4 @@ const AboutArea = () => {
     )
 }
 
-export default AboutArea;
+export default About;

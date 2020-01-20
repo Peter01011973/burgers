@@ -1,9 +1,9 @@
 import React from 'react';
 import BestBurgerArea from '../best-burger-area/best-burger-area';
 import PresidentBurgerArea from '../president-burger-area/president-burger-area';
-import './all-menu.css';
+import './menu.css';
 
-const AllBurgersMenu = () => {
+const Menu = () => {
     return (
         <div>
             <BestBurgerArea />
@@ -12,4 +12,4 @@ const AllBurgersMenu = () => {
     )
 }
 
-export default AllBurgersMenu;
+export default Menu;
