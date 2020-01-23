@@ -14,29 +14,6 @@
   margin: 0 auto;
 }
 
-.best-burger-area .container .section_title {
-  margin-bottom: 100px;
-}
-
-.best-burger-area .container .section_title span {
-  color: #f2c64d;
-  font-size: 30px;
-  font-weight: 400;
-  font-family: pacifico,cursive;
-  margin-bottom: 18px;
-  display: block;
-  text-align: center;
-}
-
-.best-burger-area .container .section_title h3 {
-  color: #1a0d01;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-family: "MontserratBold";
-  text-align: center;
-  margin: 0 0 .5rem 0;
-}
-
 .best-burger-area .container .row {
   margin: 0 -15px;
   display: -webkit-box;

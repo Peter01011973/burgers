@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import MapContainer from './google-map/google-map.js';
+import MapContainer from '../../components/google-map/google-map.js';
 import { geolocated } from "react-geolocated";
 
 const Contact = ({isGeolocationAvailable, isGeolocationEnabled, coords}) => {
@@ -10,7 +10,7 @@ const Contact = ({isGeolocationAvailable, isGeolocationEnabled, coords}) => {
             <div className='contact-container'>
                 <div className='contact-container-map'>
                     {
-                        (isGeolocationAvailable && isGeolocationEnabled && coords)
+                        (isGeolocationAvailable, isGeolocationEnabled, coords)
                             ? <MapContainer className='contact-container-map' coords={coords} mapStyles={{ width: '100%', height: '70vh' }} />
                             : <h3>Loading...</h3>
                     }

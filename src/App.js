@@ -1,25 +1,22 @@
 import React from 'react';
-import Home from './components/Home/home';
+import Home from './containers/Home/home';
 import './App.css';
-// import BestBurgerArea from './components/best-burger-area/best-burger-area';
-// import PresidentBurgerArea from './components/president-burger-area/president-burger-area';
-import About from './components/About/about';
+import About from './containers/About/about';
 import {Switch, Route} from 'react-router-dom';
 import Layout from './HOC/layout/layout';
-import Menu from './components/Menu/menu';
-import Contact from './components/contact/contact';
+import Menu from './containers/Menu/menu';
 import NotFound from './components/not-found/not-found';
+import Contact from './containers/contact/contact';
 
 function App() {
   
   return (
      <Layout>
         <Switch>
-          <Route path='/' exact component={About} />
-          <Route path='/home'><Home /></Route>
-          <Route path='/about'><About /></Route>
-          <Route path='/menu'><Menu /></Route>
-          <Route path='/contact'><Contact /></Route>
+          <Route path='/' exact component={Home} />
+          <Route path='/about' component = {About} />
+          <Route path='/menu' component = {Menu} />
+          <Route path='/contact' component = {Contact} />
           <Route component = {NotFound}/>
         </Switch>
    </Layout>

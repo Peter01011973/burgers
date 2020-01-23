@@ -1,4 +1,4 @@
-@import '../global.scss';
+@import '../../global.scss';
 
 // colors
 
@@ -25,20 +25,6 @@
         max-width: 1140px;
         padding: 0 15px;
         margin: 0 auto;
-        .section_title {
-            margin-bottom: 100px;
-            span {
-                @include pacificoFont(30px);
-                margin-bottom: 18px;
-                display: block;
-                text-align: center;
-            }
-            h3 {
-                @include montserratBold(50px);
-                text-align: center;
-                margin: 0 0 .5rem 0;
-            }
-        } 
         .row {
             margin: 0 -15px;
             display: flex;

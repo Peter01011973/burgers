@@ -1,0 +1,23 @@
+.titles {
+  margin-bottom: 100px;
+}
+
+.titles__title {
+  color: #f2c64d;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: pacifico,cursive;
+  margin-bottom: 18px;
+  display: block;
+  text-align: center;
+}
+
+.titles__subtitle {
+  color: #1a0d01;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "MontserratBold";
+  text-align: center;
+  margin: 0 0 .5rem 0;
+}
+/*# sourceMappingURL=titles.css.map */

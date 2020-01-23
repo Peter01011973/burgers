@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 
 const NavMenu = () => (
     <ul className="nav-menu">
-        <li className='nav-menu__item'><NavLink className='link' to='/home' exact activeClassName="active">home</NavLink></li>
+        <li className='nav-menu__item'><NavLink className='link' to='/' exact activeClassName="active">home</NavLink></li>
         <li className='nav-menu__item'><NavLink className='link' to='/menu' activeClassName="active">Menu</NavLink></li>
         <li className='nav-menu__item'><NavLink className='link' to='/about' activeClassName="active">About</NavLink></li>
         <li className='nav-menu__item submenu'><a className='link' href="#">blog <i className="fa fa-angle-down"></i></a>

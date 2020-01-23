@@ -25,10 +25,10 @@ export default class Home extends Component {
             {/* <div className='slider-area' > */}
                 {/* <img src = {banner}/> */}
                 <div className='slide current' style={{ backgroundImage: backgroundImage[this.state.currentPos] }}>
-                    <div className='slide__prev' onClick={this.changeBackground.bind(this, -1)}>
+                    <div className='slide__prev' onClick={this.changeBackground.bind(null, -1)}>
                         <i className="fa fa-angle-left"></i>
                     </div>
-                    <div className='slide__next' onClick={this.changeBackground.bind(this, 1)}>
+                    <div className='slide__next' onClick={this.changeBackground.bind(null, 1)}>
                         <i className='fa fa-angle-right' />
                     </div>
                 </div>

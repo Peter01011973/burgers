@@ -1,5 +1,5 @@
 import React from 'react';
-import BestBurgerArea from './best-burger-area/best-burger-area';
+import BestBurgerArea from '../../components/best-burger-area/best-burger-area';
 import PresidentBurgerArea from '../../components/president-burger-area/president-burger-area';
 import './menu.css';
 

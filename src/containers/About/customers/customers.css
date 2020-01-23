@@ -1,0 +1,31 @@
+.customers {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.customers__container__slide {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.customers__container__slide__prev {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+.customers__container__slide__image {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.customers__container__slide__next {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+/*# sourceMappingURL=customers.css.map */

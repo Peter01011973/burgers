@@ -1,0 +1,30 @@
+.customers {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 200px;
+    &__container {
+        // display: flex;
+        // flex-direction: row;
+        // margin: 0 10%;
+        &__slide {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            // z-index: 10;
+            // display: flex;
+            // width: 100%;
+            // flex-direction: row;
+            &__prev {
+                flex-basis: 15%;
+            }
+            &__image {
+                flex-basis: 55%;
+            }
+            &__next {
+                flex-basis: 15%;
+            }        
+        }
+    }   
+}

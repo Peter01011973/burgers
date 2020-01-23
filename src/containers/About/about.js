@@ -2,6 +2,7 @@ import './about.css';
 import React from 'react';
 import image1 from '../../assets/image/about/1.png';
 import image2 from '../../assets/image/about/2.png';
+import Customers from './customers/customers';
 // import signature from '../../assets/image/about/jessica-signature.png'
 
 const About = () => {
@@ -29,6 +30,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Customers />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import './best-burger-area.css';
 import React from 'react';
+import Titles from '../UI/titles/titles'
 import burger1 from '../../assets/image/burger/1.png';
 import burger2 from '../../assets/image/burger/2.png';
 import burger3 from '../../assets/image/burger/3.png';
@@ -83,10 +84,10 @@ const BestBurgerArea = () => {
     return (
         <div className='best-burger-area'>
             <div className="container">
-                <div className="section_title text-center mb-80">
-                    <span>Burger Menu</span>
-                    <h3>Best Ever Burgers</h3>
-                </div>
+                <Titles 
+                    title = 'Burger Menu'
+                    subtitle = 'Best Ever Burgers'
+                />
                 <div className="row">
                     {renderBurgers}
                 </div>
