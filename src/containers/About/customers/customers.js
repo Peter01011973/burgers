@@ -1,87 +1,88 @@
 import React from 'react';
 import './customers.css';
-import Slider from 'react-slick';
 import Titles from '../../../components/UI/titles/titles';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import avatar1 from '../../../assets/image/testmonial/1.png';
 import avatar2 from '../../../assets/image/testmonial/2.png';
 import avatar3 from '../../../assets/image/testmonial/3.png';
+import SlickHOC from '../../../HOC/slickHOC/slickHOC';
 
-// const backgroundImage = [
-//     `${avatar1}`,
-//     `${avatar2}`,
-//     `${avatar3}`
-// ]
-
-// export default class Customers extends React.Component {
-//     state = { currentPos: 0 }
-
-//     changeBackground = (index) => {
-//         let newPos = this.state.currentPos + index;
-//         if (newPos > backgroundImage.length - 1) { newPos = 0 }
-//         if (newPos < 0) { newPos = backgroundImage.length - 1 }
-//         this.setState({ currentPos: newPos });
-//     }
-
-    // render() {
-    //     return (
-    //         <div className='customers'>
-    //             <div className="customers__conainer">
-    //                 <Titles
-    //                     title='Testimonials'
-    //                     subtitle='Happy customers'
-    //                 />
-    //                 <div className="customers__container__slide">
-    //                     <h2>Hi</h2>
-    //                     <div className='customers__container__slide__previ' onClick={this.changeBackground.bind(this, -1)}>
-    //                         <i className="fa fa-angle-left"></i>
-    //                     </div>
-    //                     <div className='customers__container__slide__image'>
-    //                         <img src={avatar1} />
-    //                     </div>
-    //                     <div className='customers__container__slide__nexti' onClick={this.changeBackground.bind(this, 1)}>
-    //                         <i className='fa fa-angle-right' />
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-export default class Customers extends React.Component {
-
-    render() {
-        var settings = {
-            dots: true,
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            pauseOnHover: true
-        };
-
-        return (
-            <div className='customers'>
-                <div className="customers__conainer">
-                    <Titles
-                        title='Testimonials'
-                        subtitle='Happy customers'
-                    />
-                    <div className="customers__container__slide">
-                        <Slider {...settings}>
-                            <div>
-                                <img src={avatar1} />
-                            </div>
-                            <div>
-                                <img src={avatar2} />
-                            </div>
-                            <div>
-                                <img src={avatar3} />
-                            </div>
-                        </Slider>
-                    </div>
-                </div>
-            </div>
-
-        );
+const slidesArr = [
+    {
+        name: 'A.H. Shemanto',
+        image: avatar1,
+        rating: 4.5,
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem beatae earum inventore repudiandae sit obcaecati!'
+    },
+    {
+        name: 'Kristiana Chouhan',
+        image: avatar2,
+        rating: 3.5,
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem beatae earum inventore repudiandae sit obcaecati!'
+    },
+    {
+        name: 'Arafath Hossein',
+        image: avatar3,
+        rating: 3.5,
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem beatae earum inventore repudiandae sit obcaecati!'
     }
+]
+
+const Rating = ({ stars, name }) => {
+
+    let starsIcons = [];
+    for (let i = 0; i < Math.floor(stars); i++) {
+        starsIcons.push(<i className="starIcon fa fa-star" key={i}></i>);
+    }
+    if (stars - Math.floor(stars) > 0.1) { starsIcons.push(<i className="starIcon fa fa-star-half" key={Math.floor(stars)}></i>); }
+
+    return (
+        <div className='rating'>
+            <h4 className='rating__name'>{name}</h4>
+            <div className='rating__stars'>{starsIcons}</div>
+        </div>
+    )
 }
+
+const Customers = () => {
+
+    const settings = {
+        fade: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        className: 'customerRating'
+    }
+
+    const slidesForRender = slidesArr.map(
+        ({ name, image, rating, text }, index) => (
+            <div key={index} className='customerRating'>
+                <p className='customerRating__customerRef'>{text}</p>
+                <img src={image} alt='' />
+                <Rating stars={rating} name={name} />
+            </div>
+        )
+    )
+
+    return (
+        <div className='contact'>
+            <div className='contract__titles'>
+                <Titles
+                    title='Testimonials'
+                    subtitle='Happy customers'
+                />
+            </div>
+            <div className="contact__slider">
+                <SlickHOC settings={settings}>
+                    {slidesForRender}
+                </SlickHOC>
+            </div>
+        </div>
+    );
+}
+
+export default Customers;
+
