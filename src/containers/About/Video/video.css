@@ -1,0 +1,10 @@
+.video-area {
+  display: block;
+  background: url(../../../assets/image/video/video.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=video.css.map */
