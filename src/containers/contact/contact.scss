@@ -1,4 +1,4 @@
-@import '../global.scss';
+@import '../../components/global.scss';
 
 @mixin input_in_contact() {
     margin-top: 2rem;
@@ -20,7 +20,7 @@
         &-map {
             // height: 500px;
             height: 70vh;
-            margin-bottom: 1rem;
+            margin-bottom: 5rem;
             position: relative;
             overflow: hidden;
         }

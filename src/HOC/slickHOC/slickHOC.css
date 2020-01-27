@@ -6,17 +6,6 @@
   outline: none;
 }
 
-.customerRating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .customerRating__customerRef {
   color: #040E27;
   text-align: center;
@@ -36,6 +25,7 @@
 }
 
 .rating__name {
+  margin-top: 10px;
   color: black;
 }
 

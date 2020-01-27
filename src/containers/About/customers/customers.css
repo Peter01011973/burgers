@@ -1,4 +1,4 @@
-.contact {
+.constomers {
   padding: 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,11 +13,11 @@
           flex-direction: column;
 }
 
-.contact__titles {
+.constomers__titles {
   display: block;
 }
 
-.contact__slider {
+.constomers__slider {
   padding: 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -68,14 +68,14 @@ const Customers = () => {
     )
 
     return (
-        <div className='contact'>
-            <div className='contract__titles'>
+        <div className='constomers'>
+            <div className='constomers__titles'>
                 <Titles
                     title='Testimonials'
                     subtitle='Happy customers'
                 />
             </div>
-            <div className="contact__slider">
+            <div className="constomers__slider">
                 <SlickHOC settings={settings}>
                     {slidesForRender}
                 </SlickHOC>
