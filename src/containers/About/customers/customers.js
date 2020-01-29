@@ -47,6 +47,30 @@ const Rating = ({ stars, name }) => {
 
 const Customers = () => {
 
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "red" }}
+                onClick={onClick}                 
+            />
+        );
+    }
+      
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        console.log(props);
+        
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "green" }}
+                onClick={onClick}
+            />
+        );
+    }
+
     const settings = {
         fade: true,
         infinite: true,
@@ -54,7 +78,9 @@ const Customers = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
-        className: 'customerRating'
+        className: 'customerRating',
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     }
 
     const slidesForRender = slidesArr.map(

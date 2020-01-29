@@ -1,4 +1,6 @@
-
+@import '../../../components/global.scss';
+$fontSize: 33px;
+$navButtonDivHeight: 120px;
 .contact {
     padding: 0 40px;
     display: flex;
@@ -49,3 +51,36 @@
 .starIcon {
     color: gold;
 }
+
+.slick-arrow .slick-prev {
+    left: 0;
+    position: absolute;
+    height: $navButtonDivHeight;
+    width: 50px;
+    background: rgba(255,255,255,.2);
+    top: 40%;
+    // top: 50%;
+    text-align: center;
+    cursor: pointer;    
+    i {
+        color: white;
+        font-size: $fontSize;
+        padding-top: ($navButtonDivHeight - $fontSize)/2; 
+    }     
+}
+
+// .slick-next {
+//     background: url('../../../assets/image/arrow-left-100.png') center center no-repeat!important;
+  
+//     &::before {
+//       display: none;
+//     }
+//   }
+  
+//   .slick-prev {
+//     background: url('../../../assets/image/arrow-left-100.png') center center no-repeat!important;
+  
+//     &::before {
+//       display: none;
+//     }
+//   }

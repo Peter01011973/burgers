@@ -72,4 +72,21 @@
 .starIcon {
   color: gold;
 }
+
+.slick-arrow .slick-prev {
+  left: 0;
+  position: absolute;
+  height: 120px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 40%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slick-arrow .slick-prev i {
+  color: white;
+  font-size: 33px;
+  padding-top: 43.5px;
+}
 /*# sourceMappingURL=customers.css.map */
