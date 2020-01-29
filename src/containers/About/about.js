@@ -3,7 +3,8 @@ import React from 'react';
 import image1 from '../../assets/image/about/1.png';
 import image2 from '../../assets/image/about/2.png';
 import Customers from './customers/customers';
-// import signature from '../../assets/image/about/jessica-signature.png'
+// import signature from '../../assets/image/about/jessica-signature.png';
+import Video from './Video/video';
 
 const About = () => {
     return (
@@ -31,6 +32,7 @@ const About = () => {
                 </div>
             </div>
             <Customers />
+            <Video />
         </div>
     )
 }

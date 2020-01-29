@@ -1,11 +1,11 @@
-@import '../global.scss';
+@import '../../components/global.scss';
 
 @mixin input_in_contact() {
     margin-top: 2rem;
     padding-left: 1rem;
     height: 3rem;
     border: 1px solid $editBorder;
-    font-size: 1rem;
+    font-size: 1rem; 
     font-family: $font;
     @extend %placeHolderSetting;    
 }
@@ -20,7 +20,7 @@
         &-map {
             // height: 500px;
             height: 70vh;
-            margin-bottom: 1rem;
+            margin-bottom: 5rem;
             position: relative;
             overflow: hidden;
         }
