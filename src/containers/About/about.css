@@ -8,7 +8,7 @@
 .about-area {
   background: url(../../assets/image/banner/burger_bg_1.png);
   padding-top: 150px;
-  padding-bottom: 210px;
+  padding-bottom: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -91,4 +91,4 @@
   margin-bottom: 13px;
   font-family: raleway, sans-serif;
 }
-/*# sourceMappingURL=about-area.css.map */
+/*# sourceMappingURL=about.css.map */

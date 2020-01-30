@@ -7,6 +7,8 @@ import avatar1 from '../../../assets/image/testmonial/1.png';
 import avatar2 from '../../../assets/image/testmonial/2.png';
 import avatar3 from '../../../assets/image/testmonial/3.png';
 import SlickHOC from '../../../HOC/slickHOC/slickHOC';
+import prevArrow from '../../../assets/image/arrow-left.png';
+import nextArrow from '../../../assets/image/arrow-right.png';
 
 const slidesArr = [
     {
@@ -49,25 +51,29 @@ const Customers = () => {
 
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
+        
         return (
             <div
                 className={className}
-                style={{ ...style, display: "block", background: "red" }}
+                style={{ ...style, display: "block", }}
                 onClick={onClick}                 
-            />
+            >
+                <img src={nextArrow} alt = 'nextarrow'/>
+            </div>
         );
     }
       
     function SamplePrevArrow(props) {
         const { className, style, onClick } = props;
-        console.log(props);
         
         return (
             <div
                 className={className}
-                style={{ ...style, display: "block", background: "green" }}
+                style={{ ...style, display: "block" }}
                 onClick={onClick}
-            />
+            >
+                <img src={prevArrow} alt = 'prevarrow'/>
+            </div>
         );
     }
 
@@ -87,7 +93,7 @@ const Customers = () => {
         ({ name, image, rating, text }, index) => (
             <div key={index} className='customerRating'>
                 <p className='customerRating__customerRef'>{text}</p>
-                <img src={image} alt='' />
+                <img className='customerRating__slide' src={image} alt='' />
                 <Rating stars={rating} name={name} />
             </div>
         )
