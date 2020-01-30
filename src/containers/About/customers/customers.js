@@ -58,7 +58,7 @@ const Customers = () => {
                 style={{ ...style, display: "block", }}
                 onClick={onClick}                 
             >
-                <img src={nextArrow} alt = 'nextarrow'/>
+                <img className='customers__arrow' src={nextArrow} alt = 'nextarrow'/>
             </div>
         );
     }
@@ -72,7 +72,7 @@ const Customers = () => {
                 style={{ ...style, display: "block" }}
                 onClick={onClick}
             >
-                <img src={prevArrow} alt = 'prevarrow'/>
+                <img className='customers__arrow' src={prevArrow} alt = 'prevarrow'/>
             </div>
         );
     }

@@ -46,6 +46,19 @@
   margin-bottom: 30px;
 }
 
+.customerRating__slide {
+  margin-bottom: 15px;
+  margin: auto;
+}
+
+.customerRating .slick-prev {
+  left: -64px !important;
+}
+
+.customerRating .slick-next {
+  right: -20px !important;
+}
+
 .rating {
   text-align: center;
 }
@@ -58,27 +71,7 @@
   color: gold;
 }
 
-.slick-prev, .slick-next {
-  z-index: 99;
-}
-
-.slick-prev::before, .slick-next::before {
-  display: none;
-}
-
-.slick-prev img, .slick-next img {
-  opacity: 0.4;
-}
-
-.slick-prev img:hover, .slick-next img:hover {
-  cursor: pointer;
-}
-
-.slick-prev {
-  left: -64px !important;
-}
-
-.slick-next {
-  right: -20px !important;
+.customers__arrow {
+  opacity: 0.3;
 }
 /*# sourceMappingURL=customers.css.map */

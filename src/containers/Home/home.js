@@ -2,37 +2,66 @@ import './home.css';
 import React, { Component } from "react";
 import banner from '../../assets/image/banner/banner.png';
 import banner2 from '../../assets/image/banner/banner2.png';
+import prevArrow from '../../assets/image/arrow-left-slider.png';
+import nextArrow from '../../assets/image/arrow-right-slider.png';
+import SlickHOC from '../../HOC/slickHOC/slickHOC';
 
-const backgroundImage = [
-    `url(${banner})`,
-    `url(${banner2})`
-]
+const backgroundImage = [ banner, banner2 ]
 
-export default class Home extends Component {
-    state = { currentPos: 0 }
+const Home = () => {
 
-    changeBackground = (index) => {
-        let newPos = this.state.currentPos + index;
-        if (newPos > backgroundImage.length - 1) { newPos = 0 }
-        if (newPos < 0) { newPos = backgroundImage.length - 1 }
-        this.setState({ currentPos: newPos });
-    }
-
-    render() {
-        
+    function HomePageNextArrow({ className, style, onClick }) {        
         return (
-            <div className='slider' >
-            {/* <div className='slider-area' > */}
-                {/* <img src = {banner}/> */}
-                <div className='slide current' style={{ backgroundImage: backgroundImage[this.state.currentPos] }}>
-                    <div className='slide__prev' onClick={this.changeBackground.bind(null, -1)}>
-                        <i className="fa fa-angle-left"></i>
-                    </div>
-                    <div className='slide__next' onClick={this.changeBackground.bind(null, 1)}>
-                        <i className='fa fa-angle-right' />
-                    </div>
-                </div>
+            <div
+                className={className}
+                style={{ ...style, display: "block", }}
+                onClick={onClick}                 
+            >
+                <img className='homePageNextArrow' src={nextArrow} alt = 'nextarrow'/>
             </div>
         );
     }
+      
+    function HomePagePrevArrow({ className, style, onClick }) {       
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "block" }}
+                onClick={onClick}
+            >
+                <img className='homePagePrevArrow' src={prevArrow} alt = 'prevarrow'/>
+            </div>
+        );
+    }
+
+    const settings = {
+        fade: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        className: 'home__slider',
+        nextArrow: <HomePageNextArrow />,
+        prevArrow: <HomePagePrevArrow />
+    }
+
+    const slidesForRender = backgroundImage.map(
+        (banner, index) => (
+            <div key={index} className='home__slider'>
+                <img src = {banner} alt = 'banner'/>
+            </div>
+        )
+    )
+
+    return (
+        <div className='home'>
+            <SlickHOC settings={settings}>
+                {slidesForRender}
+            </SlickHOC>
+        </div>
+    );
 }
+
+export default Home;

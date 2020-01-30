@@ -33,10 +33,16 @@ $navButtonDivHeight: 120px;
         line-height: 32px; 
         margin-bottom: 30px;
     } 
-    // &__slide {
-    //     margin-bottom: 15px;
-    //     margin: auto;
-    // }  
+    &__slide {
+        margin-bottom: 15px;
+        margin: auto;
+    } 
+    .slick-prev {
+        left: -64px !important;
+    }
+    .slick-next {
+        right: -20px !important;
+    } 
  }
 .rating {
     text-align: center;
@@ -49,21 +55,9 @@ $navButtonDivHeight: 120px;
     color: gold;
 }
 
-.slick-prev, .slick-next {
-    // top: 50% !important;
-    z-index: 99;
-    &::before {
-    display: none;
-    }
-    img { 
-        opacity: 0.4;
-        &:hover {cursor: pointer;}        
-    }    
-}
 
-.slick-prev {
-    left: -64px !important;
-}
-.slick-next {
-    right: -20px !important;
-}
+.customers__arrow { 
+    opacity: 0.3;     
+}    
+
+
