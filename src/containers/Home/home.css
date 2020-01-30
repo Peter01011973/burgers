@@ -1,11 +1,11 @@
 .home {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .home__slider {
   overflow: hidden;
-  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
 }

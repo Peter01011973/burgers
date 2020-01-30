@@ -7,6 +7,7 @@ import Layout from './HOC/layout/layout';
 import Menu from './containers/Menu/menu';
 import NotFound from './components/not-found/not-found';
 import Contact from './containers/contact/contact';
+import Slider from './containers/Slider/Slider';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/about' component = {About} />
           <Route path='/menu' component = {Menu} />
+          <Route path='/slider' component = {Slider} />
           <Route path='/contact' component = {Contact} />
           <Route component = {NotFound}/>
         </Switch>
