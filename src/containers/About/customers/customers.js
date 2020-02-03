@@ -108,9 +108,7 @@ const Customers = () => {
                 />
             </div>
             <div className="constomers__slider">
-                <SlickHOC settings={settings}>
-                    {slidesForRender}
-                </SlickHOC>
+                <SlickHOC settings={settings} slides={slidesForRender} />
             </div>
         </div>
     );

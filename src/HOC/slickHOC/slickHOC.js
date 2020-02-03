@@ -3,11 +3,11 @@ import './slickHOC.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const SlickHOC = ({ settings, children }) => {
+// TODO 
+const SlickHOC = ({ settings, slides }) => {
     return (
         <Slider {...settings}>
-            {children}
+            {slides}
         </Slider>
     );
 }

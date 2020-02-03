@@ -57,9 +57,7 @@ const Home = () => {
 
     return (
         <div className='home'>
-            <SlickHOC settings={settings}>
-                {slidesForRender}
-            </SlickHOC>
+            <SlickHOC settings={settings} slides={slidesForRender}/>
         </div>
     );
 }

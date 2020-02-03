@@ -6,8 +6,11 @@
 
 .home__slider {
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+.home__slider img {
+  width: 100%;
+  height: 100%;
 }
 
 .homePageNextArrow {
